@@ -24,10 +24,10 @@ jobs:
     
     - name: Run Tests
       run: |
-      # If you have testing framwork like pytest set up, run it here.
-      # docker run fastapi-app-test pytest
+        # If you have testing framwork like pytest set up, run it here.
+        # docker run fastapi-app-test pytest
 
-      
-      docker run -d -p 8000:8000 --name test-container fastapi-app-test
-      sleep 3
-      curl --fail http://localhost:8000/ || exit 1
+        
+        docker run -d -p 8000:8000 --name test-container fastapi-app-test
+        sleep 3
+        curl --fail http://localhost:8000/ || exit 1
