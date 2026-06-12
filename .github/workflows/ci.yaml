@@ -1,6 +1,5 @@
 name: FastAPI CI Pipeline
 
-# Trigger this workflow every time you push to the 'main' branch
 on:
   push:
     branches: [ main ]
@@ -9,27 +8,23 @@ on:
 
 jobs:
   build-and-test:
-    # Run this on a clean virtual machine hosted by GitHub
     runs-on: ubuntu-latest
 
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
     steps:
-    # Step 1: Download your code from GitHub into the virtual machine
+    # Upgraded to v6 for native Node 24 support
     - name: Checkout Code
-      uses: actions/checkout@v4.2.2
+      uses: actions/checkout@v6
 
-    # Step 2: Set up Docker on the virtual machine
+    # Upgraded to v4 for native Node 24 support
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3.10.0
+      uses: docker/setup-buildx-action@v4
 
-    # Step 3: Build the Docker image (just like you did locally)
+    # Build the Docker image
     - name: Build Docker Image
       run: |
         docker build -t fastapi-app-test .
 
-    # Step 4: Run your tests inside the container
+    # Run your application tests
     - name: Run Tests
       run: |
         docker run -d -p 8000:8000 --name test-container fastapi-app-test
