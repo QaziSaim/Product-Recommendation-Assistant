@@ -12,6 +12,9 @@ jobs:
     # Run this on a clean virtual machine hosted by GitHub
     runs-on: ubuntu-latest
 
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
     # Step 1: Download your code from GitHub into the virtual machine
     - name: Checkout Code
