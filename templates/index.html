@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Recommender</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>AI Shop Assistant</h2>
+
+        <div class="filters">
+            <input type="number" id="budget" placeholder="Budget ₹">
+
+            <select id="category">
+                <option>Mobile</option>
+                <option>Laptop</option>
+                <option>Headphones</option>
+            </select>
+
+            <button onclick="recommend()">
+                Find Products
+            </button>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="hero">
+            <h1>Find Your Perfect Product</h1>
+            <p>Powered by AI Recommendations</p>
+        </div>
+
+        <div id="products" class="products"></div>
+
+        <div class="chat">
+
+            <div id="messages"></div>
+
+            <div class="chat-input">
+                <input
+                    id="query"
+                    placeholder="Ask AI..."
+                >
+
+                <button onclick="chat()">
+                    Send
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <script src="script.js"></script> -->
+ <script src="../static/js/script.js"></script>
+
+
+</body>
+</html>
