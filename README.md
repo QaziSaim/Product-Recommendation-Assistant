@@ -73,7 +73,7 @@ project/
 ### AI & LLM
 
 * LangChain
-* Google Gemini 2.5 Flash
+* Openai GPT | gpt-3.5-turbo
 
 ### Data Storage
 
@@ -86,7 +86,7 @@ project/
 1. User enters a product-related query.
 2. Frontend sends the query to the FastAPI backend.
 3. LangChain processes the request.
-4. Gemini 2.5 Flash generates intelligent recommendations.
+4. gpt-3.5-turbo generates intelligent recommendations.
 5. Backend retrieves matching products from the product database.
 6. Recommended products are returned to the frontend.
 7. Product cards and AI explanations are displayed to the user.
@@ -136,7 +136,7 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory.
 
 ```env
-GOOGLE_API_KEY=your_google_api_key
+OPENAI_API_KEY = your_openai_api
 ```
 
 ---

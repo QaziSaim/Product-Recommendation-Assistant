@@ -50,7 +50,7 @@ templates = Jinja2Templates(
 )
 
 # -----------------------------
-# Gemini
+# GPT
 # -----------------------------
 
 llm = ChatOpenAI(
