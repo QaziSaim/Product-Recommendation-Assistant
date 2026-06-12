@@ -1,32 +1,32 @@
-from dotenv import load_dotenv
 import os
+import json
 
-from fastapi import FastAPI, Request
+from dotenv import load_dotenv
+
+from fastapi import FastAPI
+from fastapi import Request
+
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+
 from fastapi.middleware.cors import CORSMiddleware
 
 from pydantic import BaseModel
+
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
+# -----------------------------
+# Load ENV
+# -----------------------------
+
 load_dotenv()
 
+# -----------------------------
+# FastAPI
+# -----------------------------
+
 app = FastAPI()
-
-# ---------------------------
-# Gemini Model
-# ---------------------------
-
-llm = ChatOpenAI(
-    model="gpt-3.5-turbo",
-    api_key=os.getenv("OPENAI_API_KEY"),
-    temperature=0.7
-)
-
-# ---------------------------
-# Middleware
-# ---------------------------
 
 app.add_middleware(
     CORSMiddleware,
@@ -35,9 +35,9 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# ---------------------------
-# Static + Templates
-# ---------------------------
+# -----------------------------
+# Static Files
+# -----------------------------
 
 app.mount(
     "/static",
@@ -49,77 +49,177 @@ templates = Jinja2Templates(
     directory="templates"
 )
 
-# ---------------------------
-# Request Models
-# ---------------------------
+# -----------------------------
+# Gemini
+# -----------------------------
+
+llm = ChatOpenAI(
+    model="gpt-3.5-turbo",
+    api_key=os.getenv(
+        "OPENAI_API_KEY"
+    ),
+    temperature=0.7
+)
+
+# -----------------------------
+# Load Products
+# -----------------------------
+
+with open(
+    "data/products.json",
+    "r",
+    encoding="utf-8"
+) as f:
+
+    PRODUCTS = json.load(f)
+
+# -----------------------------
+# Pydantic Models
+# -----------------------------
 
 class ProductRequest(BaseModel):
+
     budget: int
     category: str
 
+
 class ChatRequest(BaseModel):
+
     query: str
 
-# ---------------------------
-# Home Page
-# ---------------------------
+# -----------------------------
+# Home
+# -----------------------------
 
 @app.get("/")
 async def home(request: Request):
+
     return templates.TemplateResponse(
         request,
-        "index.html",
-       
+        "index.html"
+        
     )
 
-# ---------------------------
-# Product Recommendation
-# ---------------------------
+# -----------------------------
+# Recommend
+# -----------------------------
 
 @app.post("/recommend")
-async def recommend(data: ProductRequest):
+async def recommend(
+    data: ProductRequest
+):
 
-    prompt = f"""
-    Recommend 5 products.
+    matched_products = [
 
-    Category: {data.category}
-    Budget: {data.budget}
+        product
 
-    Return:
-    Product Name
-    Price
-    Description
-    """
+        for product in PRODUCTS
 
-    response = llm.invoke(prompt)
+        if (
+            product["category"].lower()
+            ==
+            data.category.lower()
+        )
 
-    return {
-        "recommendation": response.content
-    }
+        and
 
-# ---------------------------
-# Chat Endpoint
-# ---------------------------
+        (
+            product["price"]
+            <=
+            data.budget
+        )
+    ]
 
-@app.post("/chat")
-async def chat(data: ChatRequest):
+    matched_products = (
+        matched_products[:8]
+    )
 
-    prompt = ChatPromptTemplate.from_template("""
-    You are an expert product recommendation assistant.
+    if not matched_products:
 
-    User Query:
-    {query}
+        return {
+            "response":
+            "No products found.",
+            "products":[]
+        }
 
-    Provide:
-    1. Best product recommendations
-    2. Why they are recommended
-    3. Pros and cons
-    4. Budget considerations
-    """)
+    prompt = ChatPromptTemplate.from_template(
+        """
+        You are an expert product recommendation assistant.
+
+        Category:
+        {category}
+
+        Budget:
+        {budget}
+
+        Products:
+        {products}
+
+        Explain why these products are good choices.
+        Keep answer under 120 words.
+        """
+    )
 
     chain = prompt | llm
 
-    response = chain.invoke({
-        "query": data.query
-    })
-    return {'response':response.content}
+    response = chain.invoke(
+        {
+            "category":
+            data.category,
+
+            "budget":
+            data.budget,
+
+            "products":
+            matched_products
+        }
+    )
+
+    return {
+
+        "response":
+        response.content,
+
+        "products":
+        matched_products
+    }
+
+# -----------------------------
+# Chat
+# -----------------------------
+
+@app.post("/chat")
+async def chat(
+    data: ChatRequest
+):
+
+    prompt = ChatPromptTemplate.from_template(
+        """
+        You are SmartShop AI.
+
+        User Query:
+        {query}
+
+        Recommend products
+        and provide helpful
+        shopping advice.
+        """
+    )
+
+    chain = prompt | llm
+
+    response = chain.invoke(
+        {
+            "query":
+            data.query
+        }
+    )
+
+    return {
+
+        "response":
+        response.content,
+
+        "products":
+        PRODUCTS[:8]
+    }

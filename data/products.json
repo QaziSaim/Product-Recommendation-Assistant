@@ -1,0 +1,929 @@
+[
+  {
+    "id":1,
+    "name":"Samsung Galaxy S24",
+    "category":"Mobile",
+    "price":74999,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"Premium Android smartphone"
+  },
+  {
+    "id":2,
+    "name":"iPhone 16 Pro",
+    "category":"Mobile",
+    "price":129999,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"Apple flagship device"
+  },
+  {
+    "id":3,
+    "name":"ASUS ROG Strix",
+    "category":"Laptop",
+    "price":95000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"Gaming laptop with RTX graphics"
+  },
+  {
+    "id":4,
+    "name":"JBL Flip 2",
+    "category":"Speaker",
+    "price":61176,
+    "rating":4.0,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":5,
+    "name":"Razer BlackWidow",
+    "category":"Keyboard",
+    "price":164608,
+    "rating":4.0,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":6,
+    "name":"Lenovo ThinkPad X1",
+    "category":"Laptop",
+    "price":18224,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":7,
+    "name":"Samsung Galaxy S4",
+    "category":"Mobile",
+    "price":86572,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":8,
+    "name":"Xbox Series X",
+    "category":"Gaming Console",
+    "price":39393,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":9,
+    "name":"LG UltraGear 6 inch",
+    "category":"Monitor",
+    "price":169542,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":10,
+    "name":"Dell Alienware",
+    "category":"Monitor",
+    "price":247278,
+    "rating":4.0,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":11,
+    "name":"Sony A7 IV",
+    "category":"Camera",
+    "price":232000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":12,
+    "name":"Microsoft Surface Pro",
+    "category":"Tablet",
+    "price":131000,
+    "rating":4.1,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":13,
+    "name":"Keychron K8",
+    "category":"Keyboard",
+    "price":175000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":14,
+    "name":"Samsung Galaxy Tab S7",
+    "category":"Tablet",
+    "price":45000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":15,
+    "name":"Apple Watch Ultra 5",
+    "category":"Smartwatch",
+    "price":89000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":16,
+    "name":"Sony WH-1000XM5",
+    "category":"Headphones",
+    "price":32000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":17,
+    "name":"Canon EOS R5",
+    "category":"Camera",
+    "price":189000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":18,
+    "name":"HP Spectre x360",
+    "category":"Laptop",
+    "price":112000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":19,
+    "name":"Bose QuietComfort",
+    "category":"Headphones",
+    "price":28000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":20,
+    "name":"Google Pixel 7",
+    "category":"Mobile",
+    "price":67000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":21,
+    "name":"MacBook Pro 8",
+    "category":"Laptop",
+    "price":205000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":22,
+    "name":"Samsung Galaxy Watch 4",
+    "category":"Smartwatch",
+    "price":24500,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":23,
+    "name":"Nikon Z9",
+    "category":"Camera",
+    "price":245000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":24,
+    "name":"Dell XPS 9",
+    "category":"Laptop",
+    "price":145000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":25,
+    "name":"Sonos One",
+    "category":"Speaker",
+    "price":45000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":26,
+    "name":"ASUS Zenbook",
+    "category":"Laptop",
+    "price":98000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":27,
+    "name":"iPad Pro",
+    "category":"Tablet",
+    "price":89000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":28,
+    "name":"Keychron K3",
+    "category":"Keyboard",
+    "price":12000,
+    "rating":4.1,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":29,
+    "name":"Bose SoundLink",
+    "category":"Speaker",
+    "price":32000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":30,
+    "name":"OnePlus 8T",
+    "category":"Mobile",
+    "price":58000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":31,
+    "name":"LG UltraGear 3 inch",
+    "category":"Monitor",
+    "price":89000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":32,
+    "name":"Garmin Fenix",
+    "category":"Smartwatch",
+    "price":68000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":33,
+    "name":"PlayStation 5",
+    "category":"Gaming Console",
+    "price":55000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":34,
+    "name":"Samsung Galaxy S2",
+    "category":"Mobile",
+    "price":42000,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":35,
+    "name":"Microsoft Surface Pro",
+    "category":"Tablet",
+    "price":125000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":36,
+    "name":"Logitech MX Keys",
+    "category":"Keyboard",
+    "price":14500,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":37,
+    "name":"Sony WH-1000XM3",
+    "category":"Headphones",
+    "price":29000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":38,
+    "name":"Dell Alienware",
+    "category":"Monitor",
+    "price":178000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":39,
+    "name":"Xiaomi 14 Pro",
+    "category":"Mobile",
+    "price":62000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":40,
+    "name":"Apple Watch Ultra 7",
+    "category":"Smartwatch",
+    "price":92000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":41,
+    "name":"Nintendo Switch OLED",
+    "category":"Gaming Console",
+    "price":48000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":42,
+    "name":"Sony A7 IV",
+    "category":"Camera",
+    "price":198000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":43,
+    "name":"Keychron K2",
+    "category":"Keyboard",
+    "price":9800,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":44,
+    "name":"Samsung Galaxy Tab S9",
+    "category":"Tablet",
+    "price":78000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":45,
+    "name":"Bose QuietComfort",
+    "category":"Headphones",
+    "price":31000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":46,
+    "name":"Lenovo ThinkPad X1",
+    "category":"Laptop",
+    "price":132000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":47,
+    "name":"JBL Flip 8",
+    "category":"Speaker",
+    "price":18500,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":48,
+    "name":"Google Pixel 6",
+    "category":"Mobile",
+    "price":55000,
+    "rating":4.1,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":49,
+    "name":"MacBook Pro 6",
+    "category":"Laptop",
+    "price":215000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":50,
+    "name":"Samsung Odyssey G9",
+    "category":"Monitor",
+    "price":145000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":51,
+    "name":"Canon EOS R5",
+    "category":"Camera",
+    "price":212000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":52,
+    "name":"Razer BlackWidow",
+    "category":"Keyboard",
+    "price":16500,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":53,
+    "name":"Apple AirPods Max",
+    "category":"Headphones",
+    "price":59000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":54,
+    "name":"Dell XPS 4",
+    "category":"Laptop",
+    "price":98000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":55,
+    "name":"Sony WH-1000XM4",
+    "category":"Headphones",
+    "price":34000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":56,
+    "name":"Xiaomi 14 Pro",
+    "category":"Mobile",
+    "price":68000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":57,
+    "name":"Nikon Z9",
+    "category":"Camera",
+    "price":238000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":58,
+    "name":"Samsung Galaxy Watch 7",
+    "category":"Smartwatch",
+    "price":32000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":59,
+    "name":"Sonos One",
+    "category":"Speaker",
+    "price":42000,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":60,
+    "name":"LG UltraGear 7 inch",
+    "category":"Monitor",
+    "price":112000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":61,
+    "name":"ASUS Zenbook",
+    "category":"Laptop",
+    "price":85000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":62,
+    "name":"Keychron K9",
+    "category":"Keyboard",
+    "price":13500,
+    "rating":4.1,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":63,
+    "name":"iPhone 5 Pro",
+    "category":"Mobile",
+    "price":115000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":64,
+    "name":"Bose SoundLink",
+    "category":"Speaker",
+    "price":28000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":65,
+    "name":"Microsoft Surface Pro",
+    "category":"Tablet",
+    "price":98000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":66,
+    "name":"PlayStation 5",
+    "category":"Gaming Console",
+    "price":52000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":67,
+    "name":"Dell Alienware",
+    "category":"Monitor",
+    "price":165000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":68,
+    "name":"Samsung Galaxy S8",
+    "category":"Mobile",
+    "price":72000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":69,
+    "name":"Apple Watch Ultra 2",
+    "category":"Smartwatch",
+    "price":78000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":70,
+    "name":"Sony WH-1000XM2",
+    "category":"Headphones",
+    "price":26500,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":71,
+    "name":"HP Spectre x360",
+    "category":"Laptop",
+    "price":108000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":72,
+    "name":"Canon EOS R5",
+    "category":"Camera",
+    "price":205000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":73,
+    "name":"Logitech MX Keys",
+    "category":"Keyboard",
+    "price":12800,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":74,
+    "name":"Google Pixel 9",
+    "category":"Mobile",
+    "price":78000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":75,
+    "name":"Samsung Galaxy Tab S8",
+    "category":"Tablet",
+    "price":65000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":76,
+    "name":"MacBook Pro 1",
+    "category":"Laptop",
+    "price":198000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":77,
+    "name":"JBL Flip 6",
+    "category":"Speaker",
+    "price":22000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":78,
+    "name":"Nintendo Switch OLED",
+    "category":"Gaming Console",
+    "price":45000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":79,
+    "name":"Razer BlackWidow",
+    "category":"Keyboard",
+    "price":17200,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":80,
+    "name":"OnePlus 9T",
+    "category":"Mobile",
+    "price":65000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":81,
+    "name":"Sony A7 IV",
+    "category":"Camera",
+    "price":189000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality camera with premium features"
+  },
+  {
+    "id":82,
+    "name":"Apple AirPods Max",
+    "category":"Headphones",
+    "price":62000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":83,
+    "name":"Samsung Odyssey G9",
+    "category":"Monitor",
+    "price":138000,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":84,
+    "name":"Garmin Fenix",
+    "category":"Smartwatch",
+    "price":72000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":85,
+    "name":"Lenovo ThinkPad X1",
+    "category":"Laptop",
+    "price":125000,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":86,
+    "name":"Keychron K5",
+    "category":"Keyboard",
+    "price":11200,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":87,
+    "name":"iPad Pro",
+    "category":"Tablet",
+    "price":95000,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality tablet with premium features"
+  },
+  {
+    "id":88,
+    "name":"Bose QuietComfort",
+    "category":"Headphones",
+    "price":30500,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":89,
+    "name":"Xbox Series X",
+    "category":"Gaming Console",
+    "price":51000,
+    "rating":4.9,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality gaming console with premium features"
+  },
+  {
+    "id":90,
+    "name":"Dell XPS 7",
+    "category":"Laptop",
+    "price":152000,
+    "rating":4.5,
+    "image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":91,
+    "name":"Sony WH-1000XM5",
+    "category":"Headphones",
+    "price":35500,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":92,
+    "name":"Samsung Galaxy S6",
+    "category":"Mobile",
+    "price":59000,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":93,
+    "name":"LG UltraGear 2 inch",
+    "category":"Monitor",
+    "price":95000,
+    "rating":4.3,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality monitor with premium features"
+  },
+  {
+    "id":94,
+    "name":"Logitech MX Keys",
+    "category":"Keyboard",
+    "price":14200,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1481343432725-20c3f7f6f3c0",
+    "description":"High-quality keyboard with premium features"
+  },
+  {
+    "id":95,
+    "name":"iPhone 9 Pro",
+    "category":"Mobile",
+    "price":23057,
+    "rating":4.0,
+    "image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":96,
+    "name":"OnePlus 3T",
+    "category":"Mobile",
+    "price":68359,
+    "rating":5.0,
+    "image":"https://images.unsplash.com/photo-1574943321367-4c3e9d9a5f3e",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":97,
+    "name":"Garmin Fenix",
+    "category":"Smartwatch",
+    "price":237694,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":98,
+    "name":"Sony WH-1000XM1",
+    "category":"Headphones",
+    "price":58103,
+    "rating":4.4,
+    "image":"https://images.unsplash.com/photo-1505740101992-1e2c2f6f8d7e",
+    "description":"High-quality headphones with premium features"
+  },
+  {
+    "id":99,
+    "name":"iPhone 2 Pro",
+    "category":"Mobile",
+    "price":112724,
+    "rating":4.8,
+    "image":"https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+    "description":"High-quality mobile with premium features"
+  },
+  {
+    "id":100,
+    "name":"JBL Flip 5",
+    "category":"Speaker",
+    "price":215127,
+    "rating":4.6,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality speaker with premium features"
+  },
+  {
+    "id":101,
+    "name":"MacBook Pro 3",
+    "category":"Laptop",
+    "price":184450,
+    "rating":4.7,
+    "image":"https://images.unsplash.com/photo-1600585154340-be6161a56a9c",
+    "description":"High-quality laptop with premium features"
+  },
+  {
+    "id":102,
+    "name":"Apple Watch Ultra 1",
+    "category":"Smartwatch",
+    "price":141014,
+    "rating":4.2,
+    "image":"https://images.unsplash.com/photo-1558618047-3c8c76c9c2f2",
+    "description":"High-quality smartwatch with premium features"
+  },
+  {
+    "id":103,
+    "name":"Lenovo ThinkPad X1",
+    "category":"Laptop",
+    "price":194149,
+    "rating":5.0,
+    "image":"https://images.unsplash.com/photo-1622280308405-8e3d6b8a3b3d",
+    "description":"High-quality laptop with premium features"
+  }
+]

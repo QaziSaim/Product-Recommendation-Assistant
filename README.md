@@ -1,6 +1,8 @@
+![](smaibanner.png)
+---
 # 🛍️ AI Product Recommendation Assistant
 
-An AI-powered product recommendation system built using FastAPI, LangChain, and Google Gemini 2.5 Flash. The application helps users discover products based on their requirements, budget, and category preferences through a modern interactive interface.
+An AI-powered product recommendation system built using FastAPI, LangChain, and GPT 3.5 Turbo. The application helps users discover products based on their requirements, budget, and category preferences through a modern interactive interface.
 
 ---
 
@@ -20,6 +22,13 @@ An AI-powered product recommendation system built using FastAPI, LangChain, and 
 
 ---
 
+## User Interface
+### Home Page
+![](uipage.png)
+### AI Response
+![](ai-response.png)
+
+---
 ## 🏗️ Project Architecture
 
 ```text

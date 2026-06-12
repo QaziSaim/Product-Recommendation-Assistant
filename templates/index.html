@@ -1,68 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Product Recommender</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <title>SmartShop AI</title>
 
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="container">
+    <!-- Navbar -->
 
-    <div class="sidebar">
-        <h2>AI Shop Assistant</h2>
+    <nav class="navbar">
 
-        <div class="filters">
-            <input type="number" id="budget" placeholder="Budget ₹">
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            SmartShop AI
+        </div>
 
-            <select id="category">
-                <option>Mobile</option>
-                <option>Laptop</option>
-                <option>Headphones</option>
-            </select>
+        <div class="search-container">
 
-            <button onclick="recommend()">
-                Find Products
+            <input type="text"
+                placeholder="Search products..."
+                class="navbar-search">
+
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-        </div>
-    </div>
 
-    <div class="main">
-
-        <div class="hero">
-            <h1>Find Your Perfect Product</h1>
-            <p>Powered by AI Recommendations</p>
         </div>
 
-        <div id="products" class="products"></div>
+        <div class="nav-icons">
 
-        <div class="chat">
+            <i class="fa-solid fa-moon"></i>
 
-            <div id="messages"></div>
+            <i class="fa-regular fa-user"></i>
 
-            <div class="chat-input">
+        </div>
+
+    </nav>
+
+    <!-- Main Dashboard -->
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>
+                <i class="fa-solid fa-sliders"></i>
+                Filters
+            </h2>
+
+            <div class="filter-group">
+
+                <label>Budget (₹)</label>
+
                 <input
-                    id="query"
-                    placeholder="Ask AI..."
-                >
+                    type="range"
+                    id="budget"
+                    min="20000"
+                    max="500000"
+                    value="100000">
 
-                <button onclick="chat()">
-                    Send
-                </button>
+                <div id="budgetValue">
+                    ₹100000
+                </div>
+
             </div>
 
-        </div>
+            <div class="filter-group">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option value="Mobile">
+                        Mobile
+                    </option>
+
+                    <option value="Laptop">
+                        Laptop
+                    </option>
+
+                    <option value="TV">
+                        TV
+                    </option>
+
+                    <option value="Fridge">
+                        Fridge
+                    </option>
+
+                    <option value="Washing Machine">
+                        Washing Machine
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button
+                class="find-btn"
+                onclick="recommend()">
+
+                Find Products
+
+            </button>
+
+            <div class="categories">
+
+                <h3>Categories</h3>
+
+                <div class="category-item">
+                    📱 Mobile
+                </div>
+
+                <div class="category-item">
+                    💻 Laptop
+                </div>
+
+                <div class="category-item">
+                    📺 TV
+                </div>
+
+                <div class="category-item">
+                    🧊 Fridge
+                </div>
+
+                <div class="category-item">
+                    🧺 Washing Machine
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- AI Recommendation -->
+
+            <section class="ai-panel">
+
+                <div class="ai-header">
+
+                    <div>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        AI Recommendation
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                </div>
+
+                <div id="messages">
+
+                    Based on your preferences,
+                    I will recommend products
+                    that provide the best value
+                    for your budget.
+
+                </div>
+
+            </section>
+
+            <!-- Products Section -->
+
+            <section class="products-section">
+
+                <div class="section-header">
+
+                    <h2>
+                        Recommended Products
+                    </h2>
+
+                </div>
+
+                <div
+                    id="products"
+                    class="product-grid">
+
+                    <!-- Product cards appear here -->
+
+                </div>
+
+            </section>
+
+            <!-- Chat -->
+
+            <section class="chat-section">
+
+                <div class="chat-box">
+
+                    <input
+                        id="query"
+                        type="text"
+                        placeholder="Ask me anything... e.g. Best gaming laptop under ₹80,000">
+
+                    <button onclick="chat()">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
 
     </div>
 
-</div>
+    <!-- Footer -->
 
-<!-- <script src="script.js"></script> -->
- <script src="../static/js/script.js"></script>
+    <footer>
 
+        <div>
+            ⚡ FastAPI
+        </div>
+
+        <div>
+            🐍 Python
+        </div>
+
+        <div>
+            🔗 LangChain
+        </div>
+
+        <div>
+            ✨ Gemini 2.5 Flash
+        </div>
+
+        <div>
+            📄 JSON Database
+        </div>
+
+        <div>
+            🌍 Open Source
+        </div>
+
+    </footer>
+
+    <script src="/static/js/script.js"></script>
 
 </body>
+
 </html>
