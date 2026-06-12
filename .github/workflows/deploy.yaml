@@ -1,0 +1,34 @@
+name: CI - AI Product Recommendation Assistant
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-package:
+    runs-on: ubuntu-latest
+
+    permissions:
+      packages: write
+      contents: read
+
+    steps:
+      # Upgraded to v6 for native Node 24 support
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      # Upgraded to v3 for native Node 24 support
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Upgraded to v6 for native Node 24 support
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository_owner }}/dosa-app:latest
