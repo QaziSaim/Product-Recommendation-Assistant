@@ -13,11 +13,9 @@ jobs:
       contents: read
 
     steps:
-      # Upgraded to v6 for native Node 24 support
       - name: Checkout code
         uses: actions/checkout@v6
 
-      # Upgraded to v3 for native Node 24 support
       - name: Login to GHCR
         uses: docker/login-action@v3
         with:
@@ -25,10 +23,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Upgraded to v6 for native Node 24 support
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/dosa-app:latest
+          # format-to-lowercase fixes the capital letters in your username
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/product-recommendation-assistant:latest
