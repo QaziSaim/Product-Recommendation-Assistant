@@ -16,6 +16,9 @@ from pydantic import BaseModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+
 # -----------------------------
 # Load ENV
 # -----------------------------
@@ -47,6 +50,15 @@ app.mount(
 
 templates = Jinja2Templates(
     directory="templates"
+)
+
+# -----------------------------
+# GEMINI
+# -----------------------------
+
+model = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    temperature=0.5
 )
 
 # -----------------------------

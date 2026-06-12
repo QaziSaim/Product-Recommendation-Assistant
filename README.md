@@ -2,7 +2,7 @@
 ---
 # 🛍️ AI Product Recommendation Assistant
 
-An AI-powered product recommendation system built using FastAPI, LangChain, and GPT 3.5 Turbo. The application helps users discover products based on their requirements, budget, and category preferences through a modern interactive interface.
+An AI-powered product recommendation system built using FastAPI, LangChain, and Gemini 2.5 Flash. The application helps users discover products based on their requirements, budget, and category preferences through a modern interactive interface.
 
 ---
 
@@ -73,7 +73,7 @@ project/
 ### AI & LLM
 
 * LangChain
-* Openai GPT | gpt-3.5-turbo
+* Openai GPT | Gemini-2.5-flash
 
 ### Data Storage
 
@@ -86,7 +86,7 @@ project/
 1. User enters a product-related query.
 2. Frontend sends the query to the FastAPI backend.
 3. LangChain processes the request.
-4. gpt-3.5-turbo generates intelligent recommendations.
+4. Gemini-2.5-flash generates intelligent recommendations.
 5. Backend retrieves matching products from the product database.
 6. Recommended products are returned to the frontend.
 7. Product cards and AI explanations are displayed to the user.
